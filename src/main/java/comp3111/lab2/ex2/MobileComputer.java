@@ -15,9 +15,10 @@ public class MobileComputer extends Computer {
 			System.out.println("Running out of battery");
 		}
 	}
+	/* Error: function unactivated due to it overridden by method-less interface */
 	public void charge() {
 		if (battery < 10)
 			battery++;
-		System.out.println("Charging this mobile computer");
+		System.out.println("Charging this mobile computer"); 
 	}
 }
