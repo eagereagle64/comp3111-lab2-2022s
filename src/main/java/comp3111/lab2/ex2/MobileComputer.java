@@ -3,7 +3,7 @@ package comp3111.lab2.ex2;
 /* Solution: add 'implements Chargeable' after 'extends Computer' */
 /* Reason: MobileComputer.charge() now overrides the method-less interface */
 
-public class MobileComputer extends Computer {
+public class MobileComputer extends Computer implements Chargeable {
 	private int battery;
 	public MobileComputer() {
 		secret = "MobileComputer secret";
