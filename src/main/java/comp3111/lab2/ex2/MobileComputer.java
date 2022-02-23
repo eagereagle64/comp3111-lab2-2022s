@@ -1,5 +1,8 @@
 package comp3111.lab2.ex2;
 
+/* Solution: add 'implements Chargeable' after 'extends Computer' */
+/* Reason: MobileComputer.charge() now overrides the method-less interface */
+
 public class MobileComputer extends Computer {
 	private int battery;
 	public MobileComputer() {
@@ -15,7 +18,6 @@ public class MobileComputer extends Computer {
 			System.out.println("Running out of battery");
 		}
 	}
-	/* Error: function unactivated due to program recognizing method-less interface instead of this */
 	public void charge() {
 		if (battery < 10)
 			battery++;
